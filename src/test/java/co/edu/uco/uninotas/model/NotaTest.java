@@ -63,6 +63,4 @@ public class NotaTest {
         totalParcial.setValor(notaTotalParcial);
         Assert.assertEquals(notaTotalParcial,totalParcial.getValor(),0.5);
     }
-
-
 }
