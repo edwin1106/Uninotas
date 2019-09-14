@@ -28,7 +28,7 @@ public class PersonaEntity {
     //llave foranea de muchos a uno
     @ManyToOne
     @JoinColumn(name="iddocumentoidentidad")
-    private TipoDocumentoIdentidad tipoDocumentoIdentidad;
+    private TipoDocumentoIdentidadEntity tipoDocumentoIdentidadEntity;
 
     @Column(name="nrodocumento")
     private String nroDocumento;
@@ -36,8 +36,6 @@ public class PersonaEntity {
     private String correo;
     @Column(name="telefono")
     private String telefono;
-    @Column(name="tiporol")
-    private TipoRol tipoRol;
-    @Column(name="fechanacimiento")
+    @Column(name="fechaNacimiento")
     private Date fechaNacimiento;
 }
