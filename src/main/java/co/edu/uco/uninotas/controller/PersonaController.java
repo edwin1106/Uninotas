@@ -10,12 +10,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/personas")
+
 public class PersonaController {
     @Autowired
     private IPersonaService personaService;
 
     @GetMapping("/personas")
-    public List<PersonaEntity> findAll(){
+    public List<PersonaEntity> findAllWithJavaconfig(){
         return personaService.findAll();
     }
 
