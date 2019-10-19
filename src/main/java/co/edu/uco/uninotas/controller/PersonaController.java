@@ -1,8 +1,7 @@
 package co.edu.uco.uninotas.controller;
 
 import co.edu.uco.uninotas.entity.PersonaEntity;
-import co.edu.uco.uninotas.service.persona.impl.IPersonaService;
-import co.edu.uco.uninotas.service.persona.impl.PersonaServiceImpl;
+import co.edu.uco.uninotas.services.IPersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +15,7 @@ public class PersonaController {
     private IPersonaService personaService;
 
     @GetMapping("/personas")
-    public List<PersonaEntity> findAllWithJavaconfig(){
+    public List<PersonaEntity> findAll(){
         return personaService.findAll();
     }
 

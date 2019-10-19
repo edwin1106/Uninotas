@@ -1,4 +1,4 @@
-package co.edu.uco.uninotas.service.persona.impl;
+package co.edu.uco.uninotas.services;
 
 import co.edu.uco.uninotas.entity.PersonaEntity;
 import co.edu.uco.uninotas.repository.IPersonaRepository;
